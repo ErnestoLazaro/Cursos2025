@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Electrosound</title>
+    <style>
+        :root {
+            --PrincipaoUno: #000000;
+            --PrincipalDos: #EFF6B2;
+            --SecundarioUno: #5E4EB2;
+            --SecundarioDos: #C4C4A9;
+            --SecundarioPie: #E5E5D7;
+            --Miselaneo: #FFFFFF;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+             font-family: "Russo One", serif;
+             font-weight: 400;
+             font-style: normal;
+             margin: 0;
+             background-color: var(--PrincipaoUno);
+        }
+        .primary-button {
+            background-color: var(--SecundarioUno);
+            border-radius: 8px;
+            border: none;
+            color: var(--Miselaneo);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+        .add-to-cart-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-detail {
+            width: 360px;
+            padding-bottom: 24px;
+            position: absolute;
+            right: 0;
+        }
+        .product-detail-close {
+            background: var(--Miselaneo);
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            z-index: 2;
+            padding: 12px;
+            border-radius: 50%;
+        }
+        .product-detail-close:hover {
+            cursor: pointer;
+        }
+        .product-detail>img:nth-child(2) {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 0 0 20px 20px;
+        }
+        .product-info {
+            margin: 24px 24px 0 24px;
+            color: var(--PrincipalDos);
+        }
+        .product-info p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .product-info p:nth-child(3) {
+            color: var(--PrincipalDos);
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 36px;
+        }
+        @media (max-width: 640px) {
+            .product-detail {
+                width: 100%;
+            }
+        }
+        
+        
+        </style>
+</head>
+<body>
+    
+    <aside class="product-detail">
+        <div class="product-detail-close">
+            <img src="./asets/fad_automation-4p.png" alt="close">
+        </div>
+        <img src="./asets/PortadaRebel05.jpeg" alt="Portada">
+        <div class="product-info">
+            <p>$35.00</p>
+            <p>Portada Disco</p>
+            <p>Este es un proyecto un poco conocido de Electrosound y estamos probando como se ve</p>
+            <button class="primary-button add-to-cart-button">
+                <img src="/asets/fad_microphone.png" alt="add to cart">
+            </button>
+        </div>
+    </aside>
+   
+</body>
+</html>
