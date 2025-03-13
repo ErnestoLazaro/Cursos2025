@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Electrosound</title>
+    <style>
+        :root {
+            --PrincipaoUno: #000000;
+            --PrincipalDos: #EFF6B2;
+            --SecundarioUno: #5E4EB2;
+            --SecundarioDos: #C4C4A9;
+            --SecundarioPie: #E5E5D7;
+            --Miselaneo: #FFFFFF;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+             font-family: "Russo One", serif;
+             font-weight: 400;
+             font-style: normal;
+             margin: 0;
+             background-color: var(--PrincipaoUno);
+        }
+        .product-detail {
+            width: 360px;
+            padding: 24px;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0;
+        }
+        .litle-container {
+            display: flex;
+        }
+        .litle-container img {
+            transform: rotate(180deg);
+            margin-right: 14px;
+        }
+        .litle {
+            font-size: var(--lg);
+            font-weight: bold;
+        }
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+            align-items: center;
+            background-color: var(--SecundarioUno);
+            margin-bottom: 24px;
+            border-radius: 8px;
+            padding: 0 24px;
+        }
+        .order p:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+        }
+        .order p span:nth-child(1) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .order p:nth-child(2) {
+            text-align: end;
+            font-weight: bold;
+        }
+        .shopping-cart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            margin-bottom: 24px;
+            align-items: center;
+        }
+        .shopping-cart figure {
+            margin: 0;
+        }
+        .shopping-cart figure img {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .shopping-cart p:nth-child(2) {
+            color: var(--PrincipalDos);
+        }
+        .shopping-cart p:nth-child(3) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .primary-button {
+            background-color: var(--SecundarioUno);
+            border-radius: 8px;
+            border: none;
+            color: var(--Miselaneo);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+ 
+        @media (max-width: 640px) {
+            .product-detail {
+                width: 100%;
+            }
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="litle-container">
+            <img src="/asets/fad_automation-4p.png" alt="arrow">
+            <p class="litle">My Order</p>
+
+        </div>
+
+        <div class="my-order-content">
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="/asets/PortadaRebel06.jpeg" alt="Disco">
+                </figure>
+                <p>Disco</p>
+                <p>$500</p>
+                <img src="/asets/fad_lock.png" alt="close">
+            </div>
+            <div class="shopping-cart">
+                <figure>
+                    <img src="/asets/PortadaRebel04.jpg" alt="Disco">
+                </figure>
+                <p>Disco</p>
+                <p>$500</p>
+                <img src="/asets/fad_lock.png" alt="close">
+            </div>
+            <div class="shopping-cart">
+                <figure>
+                    <img src="/asets/PortadaRebel05.jpeg" alt="Disco">
+                </figure>
+                <p>Disco</p>
+                <p>$500</p>
+                <img src="/asets/fad_lock.png" alt="close">
+            </div>
+            <button class="primary-button">
+                Checkout
+            </button>
+        </div>
+
+    </aside>
+   
+</body>
+</html>
